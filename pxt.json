@@ -1,0 +1,41 @@
+{
+    "name": "Radio micro:bit 1",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "audio-recording": "*",
+        "gatorSoil": "github:sparkfun/pxt-gator-soil#v1.1.2",
+        "servo": "*",
+        "radio": "*",
+        "cutebot": "github:elecfreaks/pxt-cutebot#v6.1.13",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "6.0.25",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_WITH_MITM"
+                }
+            }
+        }
+    }
+}
